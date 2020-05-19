@@ -6,7 +6,7 @@ Stripe provides a [Payment Request Button Element](https://stripe.com/docs/strip
 
 - [Demo](https://react-elements-netlify-serverless.netlify.com)
 - [Source code on GitHub](https://github.com/stripe-samples/react-elements-netlify-serverless)
-- [Watch the LearnWithJason episode](https://www.learnwithjason.dev/add-apple-pay-google-pay-to-jamstack-sites)
+- [Watch the _Learn With Jason_ episode](https://www.learnwithjason.dev/add-apple-pay-google-pay-to-jamstack-sites)
 
 ## Set up a new React project
 
@@ -49,7 +49,7 @@ git push origin master
 
 Now that our project is on GitHub, we can set up Netlify to automatically build the and publish the site whenever changes are pushed to GitHub.
 
-```
+```bash
 # initialize this site as a Netlify site
 ntl init
 ```
@@ -58,7 +58,7 @@ Follow the prompts to create a new site in your Netlify account that will auto-d
 
 For your "create-react-app" use the following build command and directory:
 
-> Your build command: `yarn build`
+> Your build command: `npm run build`
 
 > Directory to deploy: `build`
 
@@ -298,4 +298,8 @@ Once we’ve saved our updated config, we can start the server with `ntl dev`, w
 
 ## Automate fullfillment with webhook events
 
-Stripe sends webhook events for successful payments which we can use to automate our fullfillment process. So this [detailed guide](https://www.netlify.com/blog/2020/04/22/automate-order-fulfillment-w/stripe-webhooks-netlify-functions/) on how to do this. The demo source code also includes a [webhook handler function](https://github.com/stripe-samples/react-elements-netlify-serverless/blob/master/functions/webhooks.js) for your reference.
+Stripe sends webhook events for successful payments which we can use to automate our fullfillment process. See this [detailed guide](https://www.netlify.com/blog/2020/04/22/automate-order-fulfillment-w/stripe-webhooks-netlify-functions/) on how to do this. The demo source code also includes a [webhook handler function](https://github.com/stripe-samples/react-elements-netlify-serverless/blob/master/functions/webhooks.js) for your reference.
+
+## What to do next
+
+Want to take your Jamstack and Stripe sites even further? Check out [all the articles we’ve written about e-commerce on the Jamstack](https://www.netlify.com/tags/stripe/)!
